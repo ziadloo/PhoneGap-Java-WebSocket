@@ -1,7 +1,7 @@
 PhoneGap-Java-WebSocket
 =======================
 
-Few small missing classes to make the Java-WebSocket (client) project accessible through Javascript in PhoneGap.
+Few small missing classes to make the Java-WebSocket (client) project accessible through Javascript in PhoneGap+Android.
 
 This project is a variation of PhoneGap-Android-HTML5-WebSocket (https://github.com/FreakDev/PhoneGap-Android-HTML5-WebSocket).
 Here I have used the awesome Java-WebSocket project as the base to create a WebSocket client. It supports all the diffrent drafts
