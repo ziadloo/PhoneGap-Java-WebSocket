@@ -6,8 +6,10 @@ Few small missing classes to make the Java-WebSocket (client) project accessible
 This project is a variation of PhoneGap-Android-HTML5-WebSocket (https://github.com/FreakDev/PhoneGap-Android-HTML5-WebSocket).
 Here I have used the awesome Java-WebSocket project as the base to create a WebSocket client. It supports all the diffrent drafts
 (to this moment) of WebSocket protocols, up to "Hybi 17" and "RFC 6455". I've tested this project with Cordova 2.2.0 and Android 4.1.2.
+You will also need to download https://github.com/TooTallNate/Java-WebSocket.
 
 How to use:
+-----------
 
 	0. I'm assuming you already have a PhoneGap project created with "src" and "assets" folders ready.
 
@@ -32,6 +34,7 @@ How to use:
 		socket.onmessage = function(msg) { alert(msg.data); }
 
 Things to be done:
+------------------
 
 	1. "send" method does not accept files (binary data) as the WebSocket does in the Chrome.
 
