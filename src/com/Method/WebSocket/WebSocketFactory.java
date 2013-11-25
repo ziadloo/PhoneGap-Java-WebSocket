@@ -20,6 +20,7 @@ package com.Method.WebSocket;
 import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
 public class WebSocketFactory
@@ -33,11 +34,13 @@ public class WebSocketFactory
 		collection = new HashMap<String, AndroidWebSocket>();
 	}
 	
+	@JavascriptInterface
 	public AndroidWebSocket getNew(String url) throws URISyntaxException
 	{
 		return getNew(url, (String)null);
 	}
 	
+	@JavascriptInterface
 	public AndroidWebSocket getNew(String url, String[] protocols) throws URISyntaxException
 	{
 		String p = new String();
@@ -52,6 +55,7 @@ public class WebSocketFactory
 		return getNew(url, p);
 	}
 	
+	@JavascriptInterface
 	public AndroidWebSocket getNew(String url, String protocols) throws URISyntaxException
 	{
 		Map<String, String> headers = null;
@@ -66,6 +70,7 @@ public class WebSocketFactory
 		return ws;
 	}
 	
+	@JavascriptInterface
 	public void removeSocket(String key)
 	{
 		if (!collection.containsKey(key)) {
