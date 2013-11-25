@@ -34,4 +34,3 @@ public class Test extends DroidGap
         appView.addJavascriptInterface(new WebSocketFactory(appView), "WebSocketFactory");
     }
 }
-
